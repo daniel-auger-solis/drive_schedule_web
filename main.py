@@ -5,18 +5,16 @@ import gspread
 from google.oauth2.service_account import Credentials
 import json
 import base64
-import os
 
 st.title("Registro automático de visitas")
 
-# --- Código que se ejecuta automáticamente ---
+# --- Código que se ejecuta automáticamente al entrar ---
 try:
-    # Leer credenciales desde Environment Variable (Render)
-    # Variable en Render: GOOGLE_CREDENTIALS
-    credentials_b64 = os.environ.get("GOOGLE_CREDENTIALS")
-    if not credentials_b64:
-        raise ValueError("No se encontró la variable de entorno GOOGLE_CREDENTIALS")
-
+    # Leer credenciales desde Streamlit Secrets
+    # En Secrets de Streamlit Cloud:
+    # [google]
+    # credentials_json = "TU_BASE64_DEL_JSON"
+    credentials_b64 = st.secrets["google"]["credentials_json"]
     credentials_dict = json.loads(base64.b64decode(credentials_b64))
 
     # Alcances necesarios para Google Sheets y Drive
