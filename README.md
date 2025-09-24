@@ -4,6 +4,9 @@ Esta aplicación de **Streamlit** permite registrar automáticamente visitas en 
 
 ---
 
+## Ejecutar código
+Abrir el siguiente enlace para ejecutar el código: https://drive-schedule-web.onrender.com/
+
 ## 🚀 Requisitos
 
 - Python 3.10+
