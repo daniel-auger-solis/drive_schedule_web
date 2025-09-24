@@ -5,7 +5,7 @@ Esta aplicación de **Streamlit** permite registrar automáticamente visitas en 
 ---
 
 ## Ejecutar código
-Abrir el siguiente enlace para ejecutar el código: [https://drive-schedule-web.onrender.com/](https://drive-schedule-web.streamlit.app/)
+Abrir el siguiente enlace para ejecutar el código: https://drive-schedule-web.streamlit.app/
 
 ## 🚀 Requisitos
 
