@@ -48,7 +48,7 @@ try:
         else:
             next_action_number = len(values)
 
-    accion = f"Accion {next_action_number}"
+    accion = f"Accion - {next_action_number}"
     fecha = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     sheet.append_row([accion, fecha])
@@ -57,3 +57,4 @@ try:
 
 except Exception as e:
     st.error(f"Ocurrió un error al registrar la acción: {e}")
+
